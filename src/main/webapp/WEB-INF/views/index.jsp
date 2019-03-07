@@ -27,7 +27,7 @@
 <body>
 <nav class="navbar">
 	<ul class="nav navbar-nav navbar-right">
-		<li style="font-family:Georgia;"><a href="adminlogin.jsp"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Admin Login &nbsp;&nbsp;&nbsp; </a>
+		<li style="font-family:Georgia;"><a href="adminlogin"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Admin Login &nbsp;&nbsp;&nbsp; </a>
 	</ul>
 </nav>
 	<h1 style="font-family:Georgia; font-size:20px;text-align:center;">Doppelganger</h1><br>

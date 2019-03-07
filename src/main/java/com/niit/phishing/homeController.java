@@ -12,5 +12,10 @@ public class homeController {
 	{
 		return "index";
 	}
+	@RequestMapping("adminlogin")
+	public String AdminPage()
+	{
+		return "adminlogin";
+	}
 
 }
