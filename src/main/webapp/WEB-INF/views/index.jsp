@@ -35,9 +35,12 @@
 <br>
 <hr width=100%>
 <br><br>
+
+
 	<div class="container-fluid">
 		<div class="form-group">
-			<center> <input class="form-control" id="inputdefault" type="text"><br><br>
+		<form action="url2" method="Post">
+			<center> <input class="form-control" id="inputdefault" type="text" name="url"><br><br>
 	<input class="btn btn-info" type="submit" value="Search for phishing"></center>
 </form>
 </div>
