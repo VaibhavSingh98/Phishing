@@ -23,29 +23,44 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+<script>
+	function validateUserInput()
+	{
+		var x = document.forms["UserInput"]["url"].value;
+		//var validURL1 = [a-zA-Z0-9];
+		var validURL = /(http(s)?:\/\/.)?(w{3,}\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{1,6}\b([-a-zA-Z0-9@:%_\+.~#?&=]*)/mi;
+		
+		var res = x.match(validURL);
+		if(res==null)
+		{
+			alert("Please enter a valid URL");
+			return false;
+		}
+		return true;
+	}
+</script>
 </head>
 <body>
 <nav class="navbar">
 	<ul class="nav navbar-nav navbar-right">
-		<li style="font-family:Georgia;"><a href="adminlogin"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Admin Login &nbsp;&nbsp;&nbsp; </a>
+		<li style="font-family:Georgia;"><a href="adminlogin"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Admin Login &nbsp;&nbsp; </a>
 	</ul>
 </nav>
-	<h1 style="font-family:Georgia; font-size:20px;text-align:center;">Doppelganger</h1><br>
-	<h3 style="font-family:Trebuchet MS; font-size:16px;text-align:center;"><i>The ultimate phishing detector</i></h2>
+	<center><img src="resources/logo.png" alt="Doppelganger Logo" height="150px" width="150px"></center>
+	<h3 style="font-family:Trebuchet MS; text-align:center;"><i>The ultimate phishing detector</i></h3>
 <br>
 <hr width=100%>
 <br><br>
-
-
 	<div class="container-fluid">
 		<div class="form-group">
-		<form action="url2" method="Post">
-			<center> <input class="form-control" id="inputdefault" type="text" name="url"><br><br>
-	<input class="btn btn-info" type="submit" value="Search for phishing"></center>
-</form>
-</div>
-<div class="footer">
-	<h4 style="text-align:center;"> &copy; Saloni and team</h4>
-</div>
+		<form action="url2" method="Post" name="UserInput" onsubmit="return validateUserInput()">
+			<center> <input class="form-control" id="inputdefault" type="text" name="url" required><br><br>
+			<input class="btn btn-info" type="submit" value="Search for phishing"></center>
+		</form>
+		</div>
+	</div>
+	<div class="footer">
+		<h4 style="text-align:center;"> &copy; Saloni and team</h4>
+	</div>
 </body>
 </html>

@@ -1,12 +1,10 @@
-
-  
-
+<html>
 <link href="//netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-
+</head>
 <!------ Include the above in your HEAD tag ---------->
-
+<body>
 
     <div class="container">    
     
@@ -74,4 +72,5 @@
         </div>
      
     </div>
-   
+ </body>
+</html>
